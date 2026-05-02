@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ElectroTecno - Tienda de tecnología y gadgets" />
+  <title>ElectroTecno TalentoTech</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Electro<span style="color:#1a1a2e; background:#00d4ff; padding: 2px 6px; border-radius:4px;">Tecno</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <button id="carrito-btn">🛒 Carrito</button>
+  </header>
+
+  <!-- Carrito sidebar -->
+  <div id="carrito-sidebar">
+    <button id="cerrar-carrito">✕ Cerrar</button>
+    <h2>Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0</p>
+  </div>
+
+  <main>
+
+    <!-- Inicio -->
+    <section id="inicio">
+      <h2>Bienvenido a ElectroTecno</h2>
+      <p>Tu tienda de tecnología y gadgets en Argentina. Encontrá los mejores productos tech al mejor precio.</p>
+      <br>
+      <a href="#productos" style="color:#00d4ff;">Ver productos →</a>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="productos-grid">
+
+        <div class="card">
+          <img src="images/auriculares.png" alt="Auriculares" />
+          <h3>Auriculares Pro X1</h3>
+          <p>Cancelación de ruido, 5hs de batería, sonido Hi-Fi.</p>
+          <span class="precio">$25.999</span>
+          <button class="btn-agregar" data-nombre="Auriculares" data-precio="25999">Agregar al carrito</button>
+        </div>
+
+        <div class="card">
+          <img src="images/smartwatch.png" alt="Smartwatch 5" />
+          <h3>Smartwatch Elite 5</h3>
+          <p>GPS, monitor cardíaco, pantalla AMOLED, resistente al agua.</p>
+          <span class="precio">$80.000</span>
+          <button class="btn-agregar" data-nombre="Smartwatch 5" data-precio="80000">Agregar al carrito</button>
+        </div>
+
+        <div class="card">
+          <img src="images/teclado.png" alt="Teclado Mecánico" />
+          <h3>Teclado Mecánico RX</h3>
+          <p>Switches green, RGB por tecla, cuerpo de aluminio.</p>
+          <span class="precio">$42.500</span>
+          <button class="btn-agregar" data-nombre="Teclado Mecánico" data-precio="42500">Agregar al carrito</button>
+        </div>
+
+        <div class="card">
+          <img src="images/webcam.png" alt="Webcam pc usb" />
+          <h3>Webcam 4K UltraVision</h3>
+          <p>Resolución 720p, autofocus, micrófono con cancelación de ruido.</p>
+          <span class="precio">$28.000</span>
+          <button class="btn-agregar" data-nombre="Webcam" data-precio="28000">Agregar al carrito</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p style="margin-bottom: 20px; color: #aaa;">¿Tenés alguna consulta? Escribinos y te respondemos.</p>
+
+      <form action="https://formspree.io/f/xyzgpkde" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="anio"></span> ElectroTecno TalentoTech</p>
+    <p>Pre-entrega Proyecto — <strong>Ezequiel Paez</strong> — Talento Tech</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
